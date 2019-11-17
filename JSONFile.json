@@ -1,0 +1,10 @@
+[
+    {
+        "Name" : "ConnectionString1",
+        "SecretValue" : "6654332@675"
+    },
+    {
+        "Name" : "ConnectionString2",
+        "SecretValue" : "894332@263"
+    }
+]

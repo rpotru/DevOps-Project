@@ -1,0 +1,8 @@
+FROM microsoft/windowsservercore
+CMD powershell "createAzureKeyVaultUsingARM.ps1" <arguments here>
+
+FROM microsoft/windowsservercore
+CMD powershell "pushJSONSecretsToKeyVault.ps1" <arguments here>
+
+FROM microsoft/windowsservercore
+CMD powershell "getSecrets.ps1" <arguments here>

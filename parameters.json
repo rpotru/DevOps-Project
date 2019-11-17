@@ -1,0 +1,24 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+      "keyVaultName": {
+          "value": "ecb89testkeyvault"
+      },
+      "location": {
+          "value": "eastus2"
+      },
+      "tenantId": {
+          "value": "57c32976-9d6a-450c-a955-5022ac504956"
+      },
+      "objectId": {
+          "value": "bffaace3-6ae6-4abb-a6b0-01ade0a5536a"
+      },
+      "secretName": {
+          "value": "ecb89Password"
+      },        
+      "enabledForTemplateDeployment": {
+          "value": true
+      }
+  }
+}
