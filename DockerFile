@@ -1,8 +1,13 @@
 FROM microsoft/windowsservercore
-CMD powershell "createAzureKeyVaultUsingARM.ps1" <arguments here>
 
-FROM microsoft/windowsservercore
-CMD powershell "pushJSONSecretsToKeyVault.ps1" <arguments here>
+RUN mkdir c:\test
+ENV DIR c:\test
 
-FROM microsoft/windowsservercore
-CMD powershell "getSecrets.ps1" <arguments here>
+COPY createAzureKeyVaultUsingARM.ps1 $DIR
+COPY pushJSONSecretsToKeyVault.ps1 $DIR
+COPY getSecrets.ps1 $DIR
+COPY runAll.ps1 $DIR
+COPY JSONFile $DIR
+COPY parameters.json $DIR
+
+CMD ["c:\\test\\runAll.ps1"]

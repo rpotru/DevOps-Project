@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
       "keyVaultName": {
-          "value": "ecb89testkeyvault"
+          "value": "ecb99testkeyvault"
       },
       "location": {
           "value": "eastus2"
@@ -15,7 +15,7 @@
           "value": "bffaace3-6ae6-4abb-a6b0-01ade0a5536a"
       },
       "secretName": {
-          "value": "ecb89Password"
+          "value": "ecb99Password"
       },        
       "enabledForTemplateDeployment": {
           "value": true
