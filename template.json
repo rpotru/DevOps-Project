@@ -8,6 +8,12 @@
         "description": "Name of the vault"
       }
     },
+    "location": {
+      "type": "string",
+      "metadata": {
+        "description": "Name of the location"
+      }
+    },
     "tenantId": {
       "type": "string",
       "metadata": {
@@ -84,7 +90,7 @@
       "type": "Microsoft.KeyVault/vaults",
       "name": "[parameters('keyVaultName')]",
       "apiVersion": "2015-06-01",      
-      "location": "[resourceGroup().location]",
+      "location": "[parameters('location')]",
       "tags": {
         "displayName": "KeyVault"
       },
