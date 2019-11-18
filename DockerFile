@@ -1,7 +1,7 @@
 FROM microsoft/windowsservercore
 
-RUN mkdir c:\test
-ENV DIR c:\test
+RUN mkdir c:/test
+ENV DIR c:/test
 
 COPY createAzureKeyVaultUsingARM.ps1 $DIR
 COPY pushJSONSecretsToKeyVault.ps1 $DIR
